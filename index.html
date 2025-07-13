@@ -287,7 +287,7 @@
       <a class="nav-link text-white" href="#home">🏠 Home</a>
       <a class="nav-link text-white" href="#movies">🎥 Movies</a>
       <a class="nav-link text-white" href="#trailers">🎬 Trailers</a>
-      <a class="nav-link text-white" href="#Menu">☰ Menu</a>
+      <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#menuModal">☰ Menu</a>
     </div>
   </nav>
   <!-- Video Popup -->
@@ -330,4 +330,22 @@
   }
 </script>
 </body>
+  <!-- Menu Modal -->
+<div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white border border-danger">
+      <div class="modal-header">
+        <h5 class="modal-title" id="menuModalLabel">☰ Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <ul class="list-unstyled">
+          <li class="mb-3"><a href="#" class="text-white text-decoration-none">🔐 Login</a></li>
+          <li class="mb-3"><a href="#" class="text-white text-decoration-none">📺 Season</a></li>
+          <li class="mb-3"><a href="#" class="text-white text-decoration-none">🎬 Movies</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
                 </html>
